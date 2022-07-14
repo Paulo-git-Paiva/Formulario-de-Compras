@@ -3,8 +3,8 @@
     <div>
       <v-app-bar color="purple darken-2 accent-4" dense dark>
         <v-img
-          max-height="70%"
-          max-width="10%"
+          max-height="80%"
+          max-width="18%"
           src="../../public/img/logo-bempaggo.png"
         ></v-img>
       </v-app-bar>
@@ -365,9 +365,10 @@ export default {
     loading: false,
     selection: 1,
     password: "Password",
+    n: "",
     rules: {
-      required: (value) => !!value || "Requirido.",
-      min: (v) => v.length >= 8 || "No minimo 8 némeros",
+      required: (value) => !!value || "Campo Obrigatório.",
+      min: (v) => v.length >= 13 || "No minimo 13 números",
     },
   }),
   methods: {
